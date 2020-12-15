@@ -39,61 +39,120 @@
       <img src="img/main-img.png" alt="">
     </div>
   </div>
+
   <main>
+
     <section class="rent">
       <h2>Как арендовать автомобиль</h2>
-      <div class="item">
-        <h3>Выберите авто</h3>
-        <p>Выберите подходящий для вас автомобиль и нажмите кнопку “арендовать”</p>
-      </div>
-      <div class="item">
-        <h3>Заполните форму</h3>
-        <p>Оставьте заявку на сайте, заполнив поля формы (ваше имя, дата аренды)</p>
-      </div>
-      <div class="item">
-        <h3>Дождитесь звонка</h3>
-        <p>С вами свяжется менеджер для уточнения деталей</p>
-      </div>
-      <div class="item">
-        <h3>Заберите авто</h3>
-        <p>Заберите арендованный вами автомобиль из автопарка и наслаждайтесь поездкой</p>
-      </div>
+      <ul class="list container list_rent">
+
+        <li class="item">
+          <div class="icon">
+            <span class="visually-hidden">иконка Выберите подходящий для вас автомобиль и нажмите кнопку
+              “арендовать”</span>
+          </div>
+          <h3>Выберите авто</h3>
+          <p>Выберите подходящий для вас автомобиль и нажмите кнопку “арендовать”</p>
+        </li>
+
+        <li class="item">
+          <div class="icon">
+            <span class="visually-hidden">иконка Выберите подходящий для вас автомобиль и нажмите кнопку
+              “арендовать”</span>
+          </div>
+          <h3>Заполните форму</h3>
+          <p>Оставьте заявку на сайте, заполнив поля формы (ваше имя, дата аренды)</p>
+        </li>
+
+        <li class="item">
+          <div class="icon">
+            <span class="visually-hidden">иконка Выберите подходящий для вас автомобиль и нажмите кнопку
+              “арендовать”</span>
+          </div>
+          <h3>Дождитесь звонка</h3>
+          <p>С вами свяжется менеджер для уточнения деталей</p>
+        </li>
+
+        <li class="item">
+          <div class="icon">
+            <span class="visually-hidden">иконка Выберите подходящий для вас автомобиль и нажмите кнопку
+              “арендовать”</span>
+          </div>
+          <h3>Заберите авто</h3>
+          <p>Заберите арендованный вами автомобиль из автопарка и наслаждайтесь поездкой</p>
+        </li>
+
+      </ul>
+
     </section>
+
     <section class="cars">
+
       <h2>Автомобили</h2>
-      <div class="card">
-        <div class="card__image">
-          <img src="img/hyundai.jpg" alt="auto">
-        </div>
-        <div class="card__data">
-          <div class="card__tags">
-          
+
+      <ul class="list container list_cars">
+        <li class="card">
+          <div class="card__image">
+            <img src="img/hyundai.jpg" alt="auto">
           </div>
-          <div class="card__info">
-            <span class="card__info-name">Hyundai Solaris</span>
-            <span class="card__info-price">От 1500 руб / сутки</span>
-            <button class="btn card__info-btn" type="button">Арендовать</button>
+          <div class="card__data">
+            <ul class="card__tags">
+              <li>
+                <span class="tag-icon"></span>
+                <span class="tag-text">текст иконки</span>
+              </li>
+              <li>
+                <span class="tag-icon"></span>
+                <span class="tag-text">текст иконки</span>
+              </li>
+              <li>
+                <span class="tag-icon"></span>
+                <span class="tag-text">текст иконки</span>
+              </li>
+              <li>
+                <span class="tag-icon"></span>
+                <span class="tag-text">текст иконки</span>
+              </li>
+            </ul>
+            <div class="card__info">
+              <div>
+                <span class="card__info-name">Hyundai Solaris</span>
+                <span class="card__info-price">От 1500 руб / сутки</span>
+              </div>
+              <button class="btn card__info-btn" type="button">Арендовать</button>
+            </div>
           </div>
-        </div>
-      </div>
+        </li><!-- card -->
+      </ul>
+
     </section>
+
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-nav">
+          <a class="logo logo_footer">
+          <img src="img/logo.png" alt="logo">
+        </a>
+        <ul class="list footer-menu">
+          <li><a href="#0">Автомобили</a></li>
+          <li><a href="#0">О нас</a></li>
+          <li><a href="#0">Условия аренды</a></li>
+          <li><a href="#0">Юридическим лицам</a></li>
+          <li><a href="#0">Контакты</a></li>
+        </ul>
+        </div><!-- footer-nav -->    
+        <address>
+          <span>Улан-Удэ, ул. Пушкина 67</span>
+          <a href="tel:+79111233445">+7(911) 123 34 45</a>
+        </address>
+      </div><!-- footer-content -->     
+
+      <span>© 2020, Все права защищены.</span>
+    </div><!-- container -->
+  </footer>
 </body>
 
-<footer class="footer">
-  <img src="img/logo.png" alt="logo">
-  <nav class="nav">
-    <ul>
-      <li><a href="#0">Автомобили</a></li>
-      <li><a href="#0">О нас</a></li>
-      <li><a href="#0">Условия аренды</a></li>
-      <li><a href="#0">Юридическим лицам</a></li>
-      <li><a href="#0">Контакты</a></li>
-    </ul>
-  </nav>
-  <address>ул. Пушкина 67</address>
-  <a href="tel:+79111233445">+7(911) 123 34 45</a>
-  <span>© 2020, Все права защищены.</span>
-</footer>
- 
 </html>
