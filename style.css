@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 calc(100% / 100 * 1.5);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+button {
+  outline: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+}
+
+.list {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* HEADER */
+
+.header__base {
+  display: flex;
+  justify-content: space-between;
+  /* outline: 1px solid red; */
+  padding: 32px 0;
+}
+
+.header__address {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #000;
+}
+
+.header__location {
+  margin-right: 120px;
+}
+
+.header__base a {
+  color: #000000;
+}
+
+.nav {
+  background-color: #6953fe;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 21px;
+  width: 100%;
+}
+
+.main-menu li {
+  margin-left: 100px;  /* <-- это не нравится. Может без фиксированного отступа, а просто space-between, чтоб резиновость сохранялась?? */
+}
+
+/* BODY */
+
+.title-section {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+/* FOOTER */
+
+.footer-page {
+  background-color: #1c1c1c;
+  color:#FFFFFF;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 50px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.footer__location {
+  margin-bottom: 75px;
+}
+
+.copyright {
+  display: flex;
+  padding-bottom: 45px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.logo_footer {
+  margin-right: 140px;
+}
+
+.footer-menu {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer-menu li {
+  margin-bottom: 45px;
+}
