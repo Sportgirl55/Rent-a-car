@@ -8,12 +8,10 @@ $subject = 'Аренда автомобиля';
 $email_admin = 'test@mail.ru';
 
 $message = 
-'имя ' . $name . '\n' . 
-'телефон ' . $phone . '\n' . 
-'начало аренды ' . $start_date . '\n' .
-'конец аренды ' . $end_date . '\n' . 
-'сообщение ' . $comment;
-
-
+'имя ' . $name . "\n" . 
+'телефон ' . $phone . "\n" . 
+'начало аренды ' . $start_date . "\n" .
+'конец аренды ' . $end_date . "\n" . 
+'сообщение ' . $comment . "\n";
 
 mail ( $email_admin , $subject , $message );
