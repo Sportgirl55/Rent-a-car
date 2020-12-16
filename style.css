@@ -16,6 +16,11 @@ body {
 
 a {
   text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 img {
@@ -41,6 +46,14 @@ p {
 
 button {
   outline: none;
+  border: none;
+  background-color: transparent;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 input[type="text"],
@@ -116,6 +129,40 @@ input[type="submit"] {
 
 .main-menu li {
   margin-left: 100px;  /* <-- это не нравится. Может без фиксированного отступа, а просто space-between, чтоб резиновость сохранялась?? */
+}
+
+.hamb {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+
+.hamb__line {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.hamb__line::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.hamb__line::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 /* BODY */

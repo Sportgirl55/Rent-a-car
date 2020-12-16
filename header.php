@@ -29,14 +29,14 @@
         <li><a href="./page-lawyers.php">Юридическим лицам</a></li>
         <li><a href="./page-contacts.php">Контакты</a></li>
       </ul>
-    </div>
-    <button class="hamb" type="button">
-      <span class="hamb__line">
-        <span class="visually-hidden">Открыть меню</span>
-      </span>
-    </button>
-    <button class="close-menu" type="button">
-      <span class="visually-hidden">Закрыть меню</span>
-    </button>
+      <button class="hamb" type="button">
+        <span class="hamb__line">
+          <span class="visually-hidden">Открыть меню</span>
+        </span>
+      </button>
+      <button class="close-menu" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+    </div>    
   </nav>
 </header>
