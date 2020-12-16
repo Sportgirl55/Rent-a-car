@@ -172,6 +172,22 @@ input[type="submit"] {
   font-size: 48px;
 }
 
+.list_features li {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 25px;
+}
+
+.list_features li::before {
+  position: absolute;
+  left: 0;
+  top: -5px;
+  content: "";
+  width: 30px;
+  height: 30px;
+  outline: 1px solid red;
+}
+
 /* FOOTER */
 
 .footer-page {
