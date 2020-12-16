@@ -1,12 +1,10 @@
 * {
   box-sizing: border-box;
-  font-style: normal;
 }
 
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
   color: #000000;
 }
 
@@ -25,6 +23,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+address {
+    font-style: normal;
 }
 
 h1,
@@ -168,4 +170,24 @@ input[type="submit"] {
 
 .footer-menu li {
   margin-bottom: 45px;
+}
+
+@media (max-width: 1300px) {
+
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 640px) {
+    
+}
+
+@media (max-width: 480px) {
+    
 }
