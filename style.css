@@ -16,7 +16,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #FFFFFF;
 }
 
 img {
@@ -27,6 +26,10 @@ img {
 
 address {
     font-style: normal;
+}
+
+header a, footer a {
+  color: #FFFFFF;
 }
 
 h1,

@@ -1,46 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <title>Аренда авто</title>
-</head>
-<header class="header-page">
-  <div class="container">
-    <div class="header__base">
-      <a href="#0"><img src="img/icons/logo.png" alt="logo"></a>
-      <address class="header__address">
-        <span class="header__location">г.Улан-Удэ, ул. Пушкина 67</span>
-        <a class="black" href="tel:+79111233445">+7(911) 123 34 45</a>
-      </address>
-    </div>
-  </div>
-
-  <nav class="nav">
-    <div class="container nav-container">
-      <ul class="main-menu list">
-        <li><a href="#0">Автомобили</a></li>
-        <li><a href="#0">О нас</a></li>
-        <li><a href="#0">Условия аренды</a></li>
-        <li><a href="#0">Юридическим лицам</a></li>
-        <li><a href="#0">Контакты</a></li>
-      </ul>
-    </div>
-    <button class="hamb" type="button">
-      <span class="hamb__line">
-        <span class="visually-hidden">Открыть меню</span>
-      </span>
-    </button>
-    <button class="close-menu" type="button">
-      <span class="visually-hidden">Закрыть меню меню</span>
-    </button>
-  </nav>
-</header>
-
+<?php include('header.php') ?>
 <body>
   <main class="front-page">
     <div class="hero">
@@ -135,7 +93,7 @@
                 <span class="card__info-name">Hyundai Solaris</span>
                 <span class="card__info-price">От 1500 руб / сутки</span>
               </div>
-              <button class="btn card__info-btn" type="button">Арендовать</button>
+              <a class="btn card__info-btn" href="single.php">Арендовать</a>
             </div>
           </div>
         </li><!-- card -->
@@ -144,29 +102,4 @@
     </section>
 
   </main>
-
-  <footer class="footer-page">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-nav">
-          <a class="logo logo_footer"><img src="img/icons/logo-footer.png" alt="logo"></a>
-          <ul class="list footer-menu">
-            <li><a href="#0">Автомобили</a></li>
-            <li><a href="#0">О нас</a></li>
-            <li><a href="#0">Условия аренды</a></li>
-            <li><a href="#0">Юридическим лицам</a></li>
-            <li><a href="#0">Контакты</a></li>
-          </ul>
-        </div><!-- footer-nav -->
-        <address class="footer__address">
-          <span class="footer__location">г.Улан-Удэ, ул. Пушкина 67</span>
-          <a href="tel:+79111233445">+7(911) 123 34 45</a>
-        </address>
-      </div><!-- footer-content -->
-
-      <span class="copyright">© 2020, Все права защищены.</span>
-    </div><!-- container -->
-  </footer>
-</body>
-
-</html>
+  <?php include('footer.php') ?>
