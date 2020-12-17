@@ -214,10 +214,10 @@ input[type="submit"] {
 
 .hero {
   background: #e5e5e5;
-  background-image: url("./img/main-img.png");
+  background-image: url("./img/bg-hero-min.png");
   /* background-color: ##E7E3FF; */
   background-repeat: no-repeat;
-  background-position: 90% 30%;
+  background-position: top 0 right 0;
 }
 
 .inner {
@@ -266,6 +266,7 @@ input[type="submit"] {
 }
 
 .hero__btn {
+  display: inline-block;
   padding: 24px 85px;
   border-radius: 10px;
   background: linear-gradient(94.78deg, #6f59ff 29.06%, #7f93ff 116.53%);
@@ -340,7 +341,7 @@ input[type="submit"] {
 }
 
 .rent__item .icon__key {
-  background: linear-gradient(136.56deg, #6953FE 18.08%, #7F93FF 100.89%);
+  background-color: #6953fe;
   background-image: url("./img/icons/car-key.png"); 
   background-size: 31px;
   background-repeat: no-repeat;
