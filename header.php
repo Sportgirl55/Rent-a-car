@@ -15,7 +15,7 @@
       <a href="index.php"><img src="img/icons/logo.png" alt="logo"></a>
       <address class="header__address">
         <span class="header__location"><?php include('./includes/address.php') ?></span>
-        <?php include('./includes/phone.php') ?>
+        <span class="header__phone"><?php include('./includes/phone.php') ?></span>
       </address>
     </div>
   </div>
@@ -29,14 +29,14 @@
         <li><a href="./page-lawyers.php">Юридическим лицам</a></li>
         <li><a href="./page-contacts.php">Контакты</a></li>
       </ul>
-      <button class="hamb" type="button">
+      <!-- <button class="hamb" type="button">
         <span class="hamb__line">
           <span class="visually-hidden">Открыть меню</span>
         </span>
       </button>
       <button class="close-menu" type="button">
         <span class="visually-hidden">Закрыть меню</span>
-      </button>
+      </button> -->
     </div>    
   </nav>
 </header>

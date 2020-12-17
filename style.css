@@ -2,16 +2,20 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  color: #000000;
+:root {
+  --primary-color: #6953fe;
 }
 
 .container {
   max-width: 1260px;
-  padding: 0 calc(100% / 100 * 1.5);
+  padding: 0 15px;
   margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
 }
 
 a {
@@ -23,18 +27,9 @@ a:hover {
   opacity: 0.8;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-address {
-    font-style: normal;
-}
-
-header a, footer a {
-  color: #FFFFFF;
+header a,
+footer a {
+  color: #ffffff;
 }
 
 h1,
@@ -42,6 +37,16 @@ h2,
 h3,
 p {
   margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
 }
 
 button {
@@ -66,30 +71,16 @@ input[type="submit"] {
   border: none;
 }
 
-.list {
-  padding-left: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 /* HEADER */
 
 .header__base {
   display: flex;
   justify-content: space-between;
-  /* outline: 1px solid red; */
   padding: 32px 0;
+}
+
+.header__base a {
+  color: #000000;
 }
 
 .header__address {
@@ -102,15 +93,42 @@ input[type="submit"] {
 }
 
 .header__location {
+  position: relative;
   margin-right: 120px;
+  padding-left: 25px;
 }
 
-.header__base a {
-  color: #000000;
+.header__location::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 12px;
+  height: 17px;
+  background-image: url("./img/icons/geo-tag.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__phone {
+  position: relative;
+  padding-left: 30px;
+}
+
+.header__phone::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url("./img/icons/phone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .nav {
-  background-color: #6953fe;
+  background-color: var(--primary-color);
 }
 
 .nav-container {
@@ -119,17 +137,31 @@ input[type="submit"] {
   padding-top: 26px;
   padding-bottom: 26px;
 }
+
+.list {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .main-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* flex-end задан в правиле выше. А зачем он здесь - мне непонятно. Так что оставлю пока как есть*/
+  /* justify-content: flex-end; */
   font-size: 18px;
   line-height: 21px;
   width: 100%;
 }
 
 .main-menu li {
-  margin-left: 100px;  /* <-- это не нравится. Может без фиксированного отступа, а просто space-between, чтоб резиновость сохранялась?? */
+  margin-left: 100px; /* <-- это не нравится. Может без фиксированного отступа, а просто space-between, чтоб резиновость сохранялась?? */
 }
+
+/* .main-menu li:first-child {
+  margin-left: 0;
+} */
+
+/* если обнулить отступ у первого элемента, то не будет соответствовать макету. Или я туплю*/
 
 .hamb {
   position: relative;
@@ -167,15 +199,39 @@ input[type="submit"] {
 
 /* BODY */
 
+/* HERO */
+
+.hero {
+  background: #e5e5e5;
+  background-image: url("./img/main-img.png");
+  /* background-color: ##E7E3FF; */
+  background-repeat: no-repeat;
+  background-position: 90% 30%;
+}
+
+.inner {
+  padding-top: 125px;
+  padding-bottom: 155px;
+  max-width: 550px;
+}
+
 .title-section {
+  max-width: 500px;
   font-weight: bold;
   font-size: 48px;
 }
 
+.list_features {
+  margin-top: 60px;
+  margin-bottom: 72px;
+}
+
 .list_features li {
   position: relative;
-  padding-left: 40px;
-  margin-bottom: 25px;
+  padding-left: 50px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 140%;
 }
 
 .list_features li::before {
@@ -183,16 +239,44 @@ input[type="submit"] {
   left: 0;
   top: -5px;
   content: "";
-  width: 30px;
-  height: 30px;
-  outline: 1px solid red;
+  width: 27px;
+  height: 27px;
+  background-image: url("./img/icons/check.png");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center;
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
 }
+
+.hero__btn {
+  padding: 24px 85px;
+  border-radius: 10px;
+  background: linear-gradient(94.78deg, #6f59ff 29.06%, #7f93ff 116.53%);
+ 
+}
+
+.hero__btn-text {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+/* RENT */
+
+.rent {
+  background: rgba(231, 227, 255, 0.36);
+  padding-top: 83px;
+  padding-bottom: 112px;
+}
+
 
 /* FOOTER */
 
 .footer-page {
   background-color: #1c1c1c;
-  color:#FFFFFF;
+  color: #ffffff;
 }
 
 .footer-content {
@@ -203,26 +287,6 @@ input[type="submit"] {
 
 .footer-nav {
   display: flex;
-}
-
-.footer__address {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-right: 50px;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.footer__location {
-  margin-bottom: 75px;
-}
-
-.copyright {
-  display: flex;
-  padding-bottom: 45px;
-  font-size: 14px;
-  line-height: 16px;
 }
 
 .logo_footer {
@@ -238,22 +302,72 @@ input[type="submit"] {
   margin-bottom: 45px;
 }
 
-@media (max-width: 1300px) {
-
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
+.footer__location {
+  margin-bottom: 75px;
+  position: relative;
+  padding-left: 45px;
+}
+
+.footer__location::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 16px;
+  height: 23px;
+  background-image: url("./img/icons/geo-tag.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__phone {
+  position: relative;
+  padding-left: 45px;
+}
+
+.footer__phone::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 23px;
+  height: 23px;
+  background-image: url("./img/icons/phone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.copyright {
+  display: flex;
+  padding-bottom: 45px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+/* МЕДИА-ЗАПРОСЫ */
+
+@media (max-width: 1300px) {
+  .main-menu li {
+    margin-left: 30px;
+  }
+}
 @media (max-width: 992px) {
-    
 }
 
 @media (max-width: 768px) {
-    
 }
 
 @media (max-width: 640px) {
-    
 }
 
 @media (max-width: 480px) {
-    
 }

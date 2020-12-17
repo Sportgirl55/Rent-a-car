@@ -14,7 +14,7 @@
         </div><!-- footer-nav -->
         <address class="footer__address">
           <span class="footer__location"><?php include('./includes/address.php') ?></span>
-          <?php include('./includes/phone.php') ?>
+          <span class="footer__phone"><?php include('./includes/phone.php') ?></span>
         </address>
       </div><!-- footer-content -->
 
