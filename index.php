@@ -6,7 +6,7 @@
     <div class="hero">
       <div class="container">
         <div class="inner">
-          <h1 class="title-section">Аренда автомобилей в Улан-Удэ</h1>
+          <h1 class="title-section hero__title-section">Аренда автомобилей в Улан-Удэ</h1>
           <ul class="list list_features">
             <li>Надежные автомобили различных марок и комплектации</li>
             <li>Выгодные условия аренды</li>
@@ -22,40 +22,40 @@
         <h2 class="title-section">Как арендовать автомобиль</h2>
         <ul class="list list_rent">
 
-          <li class="item">
-            <div class="icon">
+          <li class="rent__item">
+            <div class="icon icon__car">
               <span class="visually-hidden">иконка Выберите подходящий для вас автомобиль и нажмите кнопку
                 “арендовать”</span>
             </div>
             <h3>Выберите авто</h3>
-            <p>Выберите подходящий для вас автомобиль и нажмите кнопку “арендовать”</p>
+            <p class="rent__item-text">Выберите подходящий для вас автомобиль и нажмите кнопку “арендовать”</p>
           </li>
 
-          <li class="item">
-            <div class="icon">
-              <span class="visually-hidden">иконка Выберите подходящий для вас автомобиль и нажмите кнопку
-                “арендовать”</span>
+          <li class="rent__item">
+            <div class="icon icon__list">
+              <span class="visually-hidden">иконка Оставьте заявку на сайте, заполнив поля формы (ваше имя, дата аренды)
+              </span>
             </div>
             <h3>Заполните форму</h3>
-            <p>Оставьте заявку на сайте, заполнив поля формы (ваше имя, дата аренды)</p>
+            <p class="rent__item-text">Оставьте заявку на сайте, заполнив поля формы (ваше имя, дата аренды)</p>
           </li>
 
-          <li class="item">
-            <div class="icon">
-              <span class="visually-hidden">иконка Выберите подходящий для вас автомобиль и нажмите кнопку
-                “арендовать”</span>
+          <li class="rent__item">
+            <div class="icon icon__man">
+              <span class="visually-hidden">иконка С вами свяжется менеджер для уточнения деталей
+                </span>
             </div>
             <h3>Дождитесь звонка</h3>
-            <p>С вами свяжется менеджер для уточнения деталей</p>
+            <p class="rent__item-text">С вами свяжется менеджер для уточнения деталей</p>
           </li>
 
-          <li class="item">
-            <div class="icon">
-              <span class="visually-hidden">иконка Выберите подходящий для вас автомобиль и нажмите кнопку
-                “арендовать”</span>
+          <li class="rent__item">
+            <div class="icon icon__key">
+              <span class="visually-hidden">иконка Заберите арендованный вами автомобиль из автопарка и наслаждайтесь поездкой
+                </span>
             </div>
             <h3>Заберите авто</h3>
-            <p>Заберите арендованный вами автомобиль из автопарка и наслаждайтесь поездкой</p>
+            <p class="rent__item-text">Заберите арендованный вами автомобиль из автопарка и наслаждайтесь поездкой</p>
           </li>
 
         </ul>
