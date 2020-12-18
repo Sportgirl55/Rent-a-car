@@ -12,7 +12,7 @@
             <li>Выгодные условия аренды</li>
             <li>Быстрый и удобный сервис без проволочек</li>
           </ul>
-          <a class="hero__btn" href="#0"><span class="hero__btn-text">Найти автомобиль</span></a>
+          <a class="btn" href="#0"><span class="btn-text">Найти автомобиль</span></a>
         </div>
       </div>
     </div>
@@ -74,33 +74,133 @@
               <img src="img/hyundai.jpg" alt="auto">
             </div>
             <div class="card__data">
-              <ul class="card__tags">
+              <ul class="list card__tags">
                 <li>
-                  <span class="tag-icon"></span>
-                  <span class="tag-text">текст иконки</span>
+                  <span class="tag-icon engine"></span>
+                  <span class="tag-text">1.6 л</span>
                 </li>
                 <li>
-                  <span class="tag-icon"></span>
-                  <span class="tag-text">текст иконки</span>
+                  <span class="tag-icon fuel"></span>
+                  <span class="tag-text">Бензин</span>
                 </li>
                 <li>
-                  <span class="tag-icon"></span>
-                  <span class="tag-text">текст иконки</span>
+                  <span class="tag-icon transmission"></span>
+                  <span class="tag-text">7-ст. механика</span>
                 </li>
                 <li>
-                  <span class="tag-icon"></span>
-                  <span class="tag-text">текст иконки</span>
+                  <span class="tag-icon canister"></span>
+                  <span class="tag-text">6.9 л/100 км</span>
                 </li>
               </ul>
               <div class="card__info">
-                <div>
+                <div class="card__wrap">
                   <span class="card__info-name">Hyundai Solaris</span>
                   <span class="card__info-price">От 1500 руб / сутки</span>
                 </div>
-                <a class="btn card__info-btn" href="single.php">Арендовать</a>
+                <a class="btn" href="single.php"><span class="btn-text">Арендовать</span></a>
               </div>
             </div>
           </li><!-- card -->
+
+          <li class="card">
+            <div class="card__image">
+              <img src="img/kia.jpg" alt="auto">
+            </div>
+            <div class="card__data">
+              <ul class="list card__tags">
+                <li>
+                  <span class="tag-icon engine"></span>
+                  <span class="tag-text">1.6 л</span>
+                </li>
+                <li>
+                  <span class="tag-icon fuel"></span>
+                  <span class="tag-text">Бензин</span>
+                </li>
+                <li>
+                  <span class="tag-icon transmission"></span>
+                  <span class="tag-text">7-ст. механика</span>
+                </li>
+                <li>
+                  <span class="tag-icon canister"></span>
+                  <span class="tag-text">6.9 л/100 км</span>
+                </li>
+              </ul>
+              <div class="card__info">
+                <div class="card__wrap">
+                  <span class="card__info-name">Kia Rio</span>
+                  <span class="card__info-price">От 1500 руб / сутки</span>
+                </div>
+                <a class="btn" href="single.php"><span class="btn-text">Арендовать</span></a>
+              </div>
+            </div>
+          </li><!-- card -->
+
+          <li class="card">
+            <div class="card__image">
+              <img src="img/chevrolet.jpg" alt="auto">
+            </div>
+            <div class="card__data">
+              <ul class="list card__tags">
+                <li>
+                  <span class="tag-icon engine"></span>
+                  <span class="tag-text">1.6 л</span>
+                </li>
+                <li>
+                  <span class="tag-icon fuel"></span>
+                  <span class="tag-text">Бензин</span>
+                </li>
+                <li>
+                  <span class="tag-icon transmission"></span>
+                  <span class="tag-text">7-ст. механика</span>
+                </li>
+                <li>
+                  <span class="tag-icon canister"></span>
+                  <span class="tag-text">6.9 л/100 км</span>
+                </li>
+              </ul>
+              <div class="card__info">
+                <div class="card__wrap">
+                  <span class="card__info-name">Chevrolet Aveo</span>
+                  <span class="card__info-price">От 1500 руб / сутки</span>
+                </div>
+                <a class="btn" href="single.php"><span class="btn-text">Арендовать</span></a>
+              </div>
+            </div>
+          </li><!-- card -->
+
+          <li class="card">
+            <div class="card__image">
+              <img src="img/hyundai1.jpg" alt="auto">
+            </div>
+            <div class="card__data">
+              <ul class="list card__tags">
+                <li>
+                  <span class="tag-icon engine"></span>
+                  <span class="tag-text">1.6 л</span>
+                </li>
+                <li>
+                  <span class="tag-icon fuel"></span>
+                  <span class="tag-text">Бензин</span>
+                </li>
+                <li>
+                  <span class="tag-icon transmission"></span>
+                  <span class="tag-text">7-ст. механика</span>
+                </li>
+                <li>
+                  <span class="tag-icon canister"></span>
+                  <span class="tag-text">6.9 л/100 км</span>
+                </li>
+              </ul>
+              <div class="card__info">
+                <div class="card__wrap">
+                  <span class="card__info-name">Hyundai Solaris</span>
+                  <span class="card__info-price">От 1500 руб / сутки</span>
+                </div>
+                <a class="btn" href="single.php"><span class="btn-text">Арендовать</span></a>
+              </div>
+            </div>
+          </li><!-- card -->
+
         </ul>
       </div>
     </section>
