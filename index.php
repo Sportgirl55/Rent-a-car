@@ -22,7 +22,7 @@
         <h2 class="title-section">Как арендовать автомобиль</h2>
         <ul class="list list_rent">
 
-          <li class="rent__item">
+          <li class="rent__item line-item  line-item_one">
             <div class="icon icon__car">
               <span class="visually-hidden">иконка Выберите подходящий для вас автомобиль и нажмите кнопку
                 “арендовать”</span>
@@ -31,7 +31,7 @@
             <p class="rent__item-text">Выберите подходящий для вас автомобиль и нажмите кнопку “арендовать”</p>
           </li>
 
-          <li class="rent__item">
+          <li class="rent__item line-item line-item_two">
             <div class="icon icon__list">
               <span class="visually-hidden">иконка Оставьте заявку на сайте, заполнив поля формы (ваше имя, дата аренды)
               </span>
@@ -40,7 +40,7 @@
             <p class="rent__item-text">Оставьте заявку на сайте, заполнив поля формы (ваше имя, дата аренды)</p>
           </li>
 
-          <li class="rent__item">
+          <li class="rent__item line-item line-item_three">
             <div class="icon icon__man">
               <span class="visually-hidden">иконка С вами свяжется менеджер для уточнения деталей
                 </span>
@@ -61,8 +61,6 @@
         </ul>
       </div>
     </section>
-
-
 
     <section class="cars">
       <div class="container">

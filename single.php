@@ -43,9 +43,11 @@
                 <input type="tel" name="phone" placeholder="Телефон">
               </label>
               <label>
+                <span class="input-title">Начало аренды:</span>
                 <input type="date" name="start-date" placeholder="Начало аренды">
               </label>
               <label>
+              <span class="input-title">Окончание аренды:</span>
                 <input type="date" name="end-date" placeholder="Окончание аренды">
               </label>
               <label>
@@ -57,7 +59,55 @@
           </div><!--single__page-form -->
         </div><!-- car-data-box -->
       </div><!--single__page-wrap -->
-    </div>
+
+      <section class="similar-cars">
+        <h2 class="title-section">Похожие авто</h2>
+        <ul class="list list_similar">
+
+          <li class="similar-item">
+            <div class="similar-item__thumb">
+              <img src="img/chevrolet.jpg" alt="">
+            </div>
+            <div class="similar-item__content">
+              <h3 class="similar-item__title">Hyundai Solaris</h3>
+              <span class="similar-item__price">От 1500 руб / сутки</span>
+            </div>
+          </li><!-- similar-item -->
+
+          <li class="similar-item">
+            <div class="similar-item__thumb">
+              <img src="img/chevrolet.jpg" alt="">
+            </div>
+            <div class="similar-item__content">
+              <h3 class="similar-item__title">Hyundai Solaris</h3>
+              <span class="similar-item__price">От 1500 руб / сутки</span>
+            </div>
+          </li><!-- similar-item -->
+
+          <li class="similar-item">
+            <div class="similar-item__thumb">
+              <img src="img/hyundai.jpg" alt="">
+            </div>
+            <div class="similar-item__content">
+              <h3 class="similar-item__title">Hyundai Solaris</h3>
+              <span class="similar-item__price">От 1500 руб / сутки</span>
+            </div>
+          </li><!-- similar-item -->
+
+          <li class="similar-item">
+            <div class="similar-item__thumb">
+              <img src="img/kia.jpg" alt="">
+            </div>
+            <div class="similar-item__content">
+              <h3 class="similar-item__title">Hyundai Solaris</h3>
+              <span class="similar-item__price">От 1500 руб / сутки</span>
+            </div>
+          </li><!-- similar-item -->
+
+        </ul><!-- list_similar -->
+      </section>     
+
+    </div><!-- container -->
 
   </main>
   <?php include('footer.php') ?>
