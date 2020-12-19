@@ -1,6 +1,6 @@
 <?php include('header.php') ?>
 <body>
   <main class="page">
-    Страница одной машины
+  <div class="container">страница автомобили</div>
   </main>
   <?php include('footer.php') ?>

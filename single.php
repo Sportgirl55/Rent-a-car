@@ -3,13 +3,11 @@
 <body>
   <main class="single__page">
 
-    <div class="single__container">
+    <div class="container single__container">
       <div class="single__page-wrap">
-        <div class="single__page-images">
-          <div class="card__image">
-            <img src="img/kia.jpg" alt="auto">
-          </div>
-        </div>
+        <div class="slider-wrapper">
+          слайдер
+        </div><!-- slider-wrapper -->
 
         <div class="car-data-box">
           <div class="car-data">
@@ -55,18 +53,10 @@
               </label>
               <button class="btn" type="submit"><span class="btn-text">Арендовать</span></button>
             </form>
-          </div>
-          <!--single__page-form -->
 
-        </div>
-
-      </div>
-      <!--single__page-wrap -->
-
-      <div class="single__page-slider">
-        слайдер
-      </div>
-
+          </div><!--single__page-form -->
+        </div><!-- car-data-box -->
+      </div><!--single__page-wrap -->
     </div>
 
   </main>

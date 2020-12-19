@@ -12,10 +12,21 @@
   margin: 0 auto;
 }
 
+html {
+  height: 100%
+}
+
 body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: "Roboto", sans-serif;
   color: #000000;
+}
+
+main {
+  flex: 1;
 }
 
 a {
@@ -72,10 +83,23 @@ input[type="text"],
 input[type="tel"],
 input[type="email"],
 input[type="button"],
-input[type="submit"] {
+input[type="date"],
+input[type="submit"],
+textarea {
   -webkit-appearance: none;
   border-radius: 0;
-  border: none;
+  display: block;
+  width: 85%;
+  border: 2px solid #BFBFBF;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
 }
 
 .visually-hidden {
@@ -182,6 +206,7 @@ input[type="submit"] {
 /* если обнулить отступ у первого элемента, то не будет соответствовать макету. Или я туплю*/
 
 .hamb {
+  display: none;
   position: relative;
   height: 40px;
   width: 40px;
@@ -213,6 +238,15 @@ input[type="submit"] {
   height: 3px;
   width: 100%;
   background-color: #ffffff;
+}
+
+.close-menu {
+  display: none;
+  width: 25px;
+  height: 25px;
+  background-repeat: repeat;
+  background-size: cover;
+  background-image: url(img/icons/close.svg);
 }
 
 /* BODY */
@@ -275,18 +309,13 @@ input[type="submit"] {
 
 .btn {
   display: inline-block;
-  padding: 24px 85px;
+  padding: 20px 40px;
   border-radius: 10px;
   background: linear-gradient(94.78deg, #6f59ff 29.06%, #7f93ff 116.53%);
-}
-
-.btn-text {
   font-size: 24px;
   font-weight: bold;
-  line-height: 28px;
   color: #ffffff;
 }
-
 /* RENT */
 
 .rent {
@@ -306,9 +335,12 @@ input[type="submit"] {
 
 .rent__item {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  max-width: calc(100% / 4);
+  width: calc(100% / 4);
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .rent__item-text {
@@ -318,7 +350,8 @@ input[type="submit"] {
 .icon {
   width: 100px;
   height: 100px;
-  margin: 100px auto 130px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   background: #ffffff;
   box-shadow: 0px 7px 16px rgba(105, 83, 254, 0.07);
   border-radius: 10px;
@@ -358,41 +391,37 @@ input[type="submit"] {
 .list_cars {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 102px;
-  padding-bottom: 300px;
+  margin-top: 100px;
+  padding-bottom: 70px;
 }
+
 .card {
-  width: calc(50% - 35px);
+  width: calc(50% - 40px);
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 76px;
-}
-
-.card:nth-child(2n + 1) {
-  margin-right: 34px;
-}
-
-.card__image {
-  max-width: 620px;
 }
 
 .card__tags {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin: 25px 0;
 }
 
 .card__tags li {
   display: flex;
+  align-self: center;
   padding: 13px;
   border-radius: 10px;
   background: #f6f4ff;
 }
 
 .card__info {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .card__wrap {
@@ -413,8 +442,7 @@ input[type="submit"] {
 }
 
 .tag-icon {
-  display: flex;
-  align-self: center;
+  
   background-repeat: no-repeat;
   background-position: center;
   /* background-size: 25px; */
@@ -440,7 +468,7 @@ input[type="submit"] {
 
 .tag-text {
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 21px;
   font-weight: bold;
   color: var(--primary-color);
@@ -475,7 +503,7 @@ input[type="submit"] {
 }
 
 .footer-menu li {
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 
 .footer__address {
@@ -487,7 +515,7 @@ input[type="submit"] {
 }
 
 .footer__location {
-  margin-bottom: 75px;
+  margin-bottom: 40px;
   position: relative;
   padding-left: 45px;
 }
@@ -495,6 +523,8 @@ input[type="submit"] {
 .footer__location::before {
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   content: "";
   width: 16px;
   height: 23px;
@@ -512,6 +542,8 @@ input[type="submit"] {
 .footer__phone::before {
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   content: "";
   width: 23px;
   height: 23px;
@@ -535,21 +567,22 @@ input[type="submit"] {
 }
 
 .single__container {
-  width: 1305px;
-  padding-top: 89px;
+  padding-top: 90px;
   padding-bottom: 100px;
-  margin: auto;
-  /* margin-left: 20%;
-  margin-right: auto; */
 }
 
 .single__page-wrap {
   display: flex;
+}
 
+.slider-wrapper {
+  width: calc(70% - 40px);
+  margin-right: 40px;
+  outline: 1px solid red;
 }
 
 .car-data-box {
-  width: 448px;
+  width: 30%;
   margin-left: 61px;
 }
 
@@ -564,8 +597,6 @@ input[type="submit"] {
   line-height: 21px;
   text-align: right;
 }
-
-
 
 .car__info-list {
   display: flex;
@@ -585,16 +616,17 @@ input[type="submit"] {
   background: #f6f5ff;
   border-radius: 10px;
   padding-top: 30px;
+  padding-bottom: 40px;
 }
 
-input, textarea {
-  display: block;
-  width: 348px;
-  height: 50px;
-  border: 2px solid #BFBFBF;
-  margin: auto;
-  margin-bottom: 20px;
+.btn[type="submit"] {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.page {
+  padding: 50px 0;
 }
 
 /* МЕДИА-ЗАПРОСЫ */
@@ -603,15 +635,201 @@ input, textarea {
   .main-menu li {
     margin-left: 30px;
   }
+
+  .card__tags {
+    flex-wrap: wrap;
+  }
+
+  .card__tags li {
+    width: 49%;
+    margin-bottom: 10px;
+  }
+
+  .hero .container {
+    padding: 0;
+  }
+
+  .hero .inner {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: none;
+    background-color: #72728266;
+    color: #ffffff;
+  }
 }
+
 @media (max-width: 992px) {
+  .header__location {
+    margin-right: 35px;
+  }
+
+  .main-menu {
+    display: none;
+  }
+
+  .hamb {
+    display: block;
+  }
+
+  .title-section {
+    font-size: 32px;
+  }
+  
+  .cars {
+    padding-top: 50px;
+  }
+
+  .list_cars {
+    margin-top: 50px;
+  }
+
+  .card {
+    margin-bottom: 60px;
+  }
+
+  .rent {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .list_rent {
+    flex-wrap: wrap;
+  }
+
+  .rent__item {    
+    width: calc(100% / 2);
+  }
+
+  .icon {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .card__tags {
+    margin-bottom: 10px;
+  }
+
+  .card__info-name {
+    margin-bottom: 15px;
+  }
+
+  .card .btn {
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  .footer__address {
+    font-size: 16px;
+  }
+
+  .footer-menu {
+    display: none;
+  }
+
+  .footer__location,
+  .footer__phone {
+    padding-left: 30px;
+  }
+
+  .footer__location::before {
+    width: 13px;
+    height: 18px;
+  }
+
+  .footer__phone::before {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 @media (max-width: 768px) {
+  .header__base {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo_header {
+    margin-bottom: 30px;
+  }
+
+  .card__tags {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .card__tags li {
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+  }  
+
+  .tag-icon {
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+  }  
+
+  .footer__address {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card__tags li {
+    flex: 1;
+  }
 }
 
 @media (max-width: 640px) {
+  .inner {
+    padding-top: 50px;
+    padding-bottom: 50px
+  }
+  .header__address {
+    font-size: 14px;
+  }
+  .card__tags li {
+    flex: calc(50% - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #f6f4ff;
+  }
+
+  .footer-content {
+    padding-top: 40px;
+    flex-direction: column;
+  }
+
+  .logo_footer {
+    margin-bottom: 30px;
+  }
+
+  .footer__address {
+    margin-bottom: 30px;
+  }
+
+  .footer__location {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 480px) {
+
+  .header__address {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__location {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }

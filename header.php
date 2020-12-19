@@ -3,16 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="css/pgwslider.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <title>Аренда авто</title>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/pgwslider.min.js"></script>
 </head>
 <header class="header-page">
   <div class="container">
     <div class="header__base">
-      <a href="index.php"><img src="img/icons/logo.png" alt="logo"></a>
+      <a class="logo logo_header" href="/"><img src="img/icons/logo.png" alt="logo"></a>
       <address class="header__address">
         <span class="header__location"><?php include('./includes/address.php') ?></span>
         <span class="header__phone"><?php include('./includes/phone.php') ?></span>
@@ -29,14 +32,14 @@
         <li><a href="./page-lawyers.php">Юридическим лицам</a></li>
         <li><a href="./page-contacts.php">Контакты</a></li>
       </ul>
-      <!-- <button class="hamb" type="button">
+      <button class="hamb" type="button">
         <span class="hamb__line">
           <span class="visually-hidden">Открыть меню</span>
         </span>
       </button>
       <button class="close-menu" type="button">
         <span class="visually-hidden">Закрыть меню</span>
-      </button> -->
+      </button>
     </div>    
   </nav>
 </header>

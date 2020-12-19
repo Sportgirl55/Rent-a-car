@@ -68,7 +68,7 @@
       <div class="container">
         <h2 class="title-section">Автомобили</h2>
 
-        <ul class="list container list_cars">
+        <ul class="list list_cars">
           <li class="card">
             <div class="card__image">
               <img src="img/hyundai.jpg" alt="auto">
@@ -97,7 +97,7 @@
                   <span class="card__info-name">Hyundai Solaris</span>
                   <span class="card__info-price">От 1500 руб / сутки</span>
                 </div>
-                <a class="btn" href="single.php"><span class="btn-text">Арендовать</span></a>
+                <a class="btn" href="single.php">Арендовать</a>
               </div>
             </div>
           </li><!-- card -->
@@ -130,7 +130,7 @@
                   <span class="card__info-name">Kia Rio</span>
                   <span class="card__info-price">От 1500 руб / сутки</span>
                 </div>
-                <a class="btn" href="single.php"><span class="btn-text">Арендовать</span></a>
+                <a class="btn" href="single.php">Арендовать</a>
               </div>
             </div>
           </li><!-- card -->
@@ -163,7 +163,7 @@
                   <span class="card__info-name">Chevrolet Aveo</span>
                   <span class="card__info-price">От 1500 руб / сутки</span>
                 </div>
-                <a class="btn" href="single.php"><span class="btn-text">Арендовать</span></a>
+                <a class="btn" href="single.php">Арендовать</a>
               </div>
             </div>
           </li><!-- card -->
@@ -196,7 +196,7 @@
                   <span class="card__info-name">Hyundai Solaris</span>
                   <span class="card__info-price">От 1500 руб / сутки</span>
                 </div>
-                <a class="btn" href="single.php"><span class="btn-text">Арендовать</span></a>
+                <a class="btn" href="single.php">Арендовать</a>
               </div>
             </div>
           </li><!-- card -->

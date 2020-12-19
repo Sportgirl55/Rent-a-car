@@ -3,7 +3,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-nav">
-          <a class="logo logo_footer"><img src="img/icons/logo-footer.png" alt="logo"></a>
+          <a class="logo logo_footer" href="/"><img src="img/icons/logo-footer.png" alt="logo"></a>
           <ul class="list footer-menu">
             <li><a href="./page-cars.php">Автомобили</a></li>
             <li><a href="./page-about.php">О нас</a></li>
@@ -21,6 +21,7 @@
       <span class="copyright">© 2020, Все права защищены.</span>
     </div><!-- container -->
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
