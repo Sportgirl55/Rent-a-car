@@ -778,6 +778,10 @@ textarea {
     margin-bottom: 10px;
   }
 
+  .hero {
+    background-position: 500px 0;
+  }
+
   .hero .container {
     padding: 0;
   }
@@ -810,6 +814,10 @@ textarea {
 
   .title-section {
     font-size: 32px;
+  }
+
+  .hero {
+    background-position: 430px -50px;
   }
   
   .cars {
@@ -912,6 +920,10 @@ textarea {
     top: 170px;
   }
 
+  .hero {
+    background-position: 350px -50px;
+  }
+  
   .card__tags {
     display: flex;
     justify-content: space-between;
@@ -981,6 +993,11 @@ textarea {
     font-size: 14px;
   }
 
+  .hero {
+    background-position: 250px;
+    background-size: cover;
+  }
+
   .card__wrap {
     padding-left: 5px;
   }
@@ -1040,6 +1057,11 @@ textarea {
   .header__location {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+
+  .hero {
+    background-position: 50px;
+    background-size: contain;
   }
 
   .title-section {
