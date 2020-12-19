@@ -260,6 +260,53 @@ textarea {
   background-image: url(img/icons/close.svg);
 }
 
+.header-page.open {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  z-index: 50;
+}
+
+.header-page.open .container {
+  width: 100%;
+}
+
+.header-page.open .nav {  
+  flex: 1;
+}
+
+.header-page.open .nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-page.open .hamb {
+  display: none;
+}
+
+.header-page.open .close-menu {
+  position: absolute;
+  top: 120px;
+  right: 40px;
+  display: block;
+}
+
+.header-page.open .main-menu {
+  display: block;
+  width: auto;
+}
+
+.header-page.open .main-menu li {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 24px;
+}
+
 /* BODY */
 
 /* HERO */
@@ -861,6 +908,10 @@ textarea {
     margin-bottom: 30px;
   }
 
+  .header-page.open .close-menu {
+    top: 170px;
+  }
+
   .card__tags {
     display: flex;
     justify-content: space-between;
@@ -969,6 +1020,14 @@ textarea {
 }
 
 @media (max-width: 480px) {
+  .header-page.open .close-menu {
+    top: 200px;
+  }
+
+  .header-page.open .main-menu li {
+    text-align: left;
+  }
+
   h3 {
     font-size: 16px;
   }
