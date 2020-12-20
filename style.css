@@ -13,7 +13,7 @@
 }
 
 html {
-  height: 100%
+  height: 100%;
 }
 
 body {
@@ -101,8 +101,8 @@ input[type="submit"],
 textarea {
   -webkit-appearance: none;
   border-radius: 0;
-  display: block;  
-  border: 2px solid #BFBFBF;
+  display: block;
+  border: 2px solid #bfbfbf;
   width: 100%;
   padding: 15px;
   border-radius: 5px;
@@ -276,7 +276,7 @@ textarea {
   width: 100%;
 }
 
-.header-page.open .nav {  
+.header-page.open .nav {
   flex: 1;
 }
 
@@ -444,7 +444,6 @@ textarea {
 
 .line-item {
   position: relative;
-  
 }
 
 .line-item::after {
@@ -531,7 +530,6 @@ textarea {
 }
 
 .tag-icon {
-  
   background-repeat: no-repeat;
   background-position: center;
   width: 25px;
@@ -692,7 +690,7 @@ textarea {
   margin-top: 30px;
 }
 
-.car__info-list li{
+.car__info-list li {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
@@ -739,7 +737,7 @@ textarea {
   width: calc(100% / 4 - 10px);
   margin-left: 5px;
   margin-right: 5px;
-  background-color: #F6F4FF;
+  background-color: #f6f4ff;
   border-radius: 10px;
   text-align: center;
   padding: 10px 10px 25px 10px;
@@ -759,7 +757,7 @@ textarea {
 .similar-item__price {
   font-weight: 700;
   font-size: 18px;
-  color: #6953FE
+  color: #6953fe;
 }
 
 /* PAGE-RENT */
@@ -772,7 +770,6 @@ textarea {
   display: flex;
   justify-content: center;
 }
-
 
 .rules-desc {
   outline: 1px solid red;
@@ -828,10 +825,27 @@ textarea {
 }
 
 .block-attention p {
-  outline: 1px solid blue;
   width: 55%;
   padding-left: 60px;
   margin-bottom: 0;
+  position: relative;
+}
+
+.block-attention p:before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: 4px;
+  background-position: center;
+  background-image: url(img/icons/icon-attention-sign.svg);  /* добавить восклицательный знак */
+  border: 2px solid red;
+  border-radius: 5px;
 }
 
 .list_rules {
@@ -850,14 +864,14 @@ textarea {
   line-height: 1.5;
 }
 
-.list-rules__item .title-section{
+.list-rules__item .title-section {
   font-size: 24px;
   color: var(--primary-color);
 }
 
 /* PAGE-ABOUT */
 
-.about {  
+.about {
   outline: 1px solid blue;
   margin-bottom: 50px;
 }
@@ -873,7 +887,7 @@ textarea {
   outline: 1px solid tomato;
 }
 
-.about-feature {  
+.about-feature {
   outline: 1px solid blue;
   margin-bottom: 50px;
 }
@@ -945,6 +959,26 @@ textarea {
   margin-bottom: 0;
 }
 
+.list_guarantee-marker {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.list_guarantee-marker:before {
+  position: absolute;
+  left: -20px;
+  top: 8px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+}
+
 /* МЕДИА-ЗАПРОСЫ */
 
 @media (max-width: 1300px) {
@@ -1002,7 +1036,7 @@ textarea {
   .hero {
     background-position: 430px -50px;
   }
-  
+
   .cars {
     padding-top: 50px;
   }
@@ -1024,7 +1058,7 @@ textarea {
     flex-wrap: wrap;
   }
 
-  .rent__item {    
+  .rent__item {
     width: calc(100% / 2);
   }
 
@@ -1087,6 +1121,36 @@ textarea {
     width: calc(100% / 2 - 10px);
     margin-bottom: 25px;
   }
+
+  .cooperation-desc {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .rules-desc {
+    display: block;
+  }
+
+  .rules-desc__text,
+  .rules-desc__list-wrapper {
+    width: 100%;
+  }
+
+  .block-attention p {
+    display: block;
+    width: 100%;
+  }
+
+  .list_rules {
+    display: block;
+    width: 100%;
+  }
+
+  .list-rules__item {
+    width: 100%;
+    max-width: 60%;
+    margin: 20px auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1106,7 +1170,7 @@ textarea {
   .hero {
     background-position: 350px -50px;
   }
-  
+
   .card__tags {
     display: flex;
     justify-content: space-between;
@@ -1117,13 +1181,13 @@ textarea {
     padding: 5px;
     font-size: 12px;
     border-radius: 5px;
-  }  
+  }
 
   .tag-icon {
     width: 15px;
     height: 15px;
     background-size: contain;
-  }  
+  }
 
   .footer__address {
     padding-right: 0;
@@ -1132,7 +1196,7 @@ textarea {
   .single__container {
     padding-top: 50px;
     padding-bottom: 50px;
-}
+  }
 
   .single__page-wrap {
     flex-wrap: wrap;
@@ -1146,6 +1210,24 @@ textarea {
   .car-data-box {
     width: 100%;
     margin-left: 0;
+  }
+
+  .about-inner,
+  .about-feature-inner {
+    width: 100%;
+  }
+
+  .cooperation-list {
+    flex-wrap: wrap;
+  }
+
+  .cooperation__item {
+    width: calc(100% / 2 - 40px);
+    margin-bottom: 20px;
+  }
+
+  .list-rules__item {
+    max-width: 80%;
   }
 }
 
@@ -1170,7 +1252,7 @@ textarea {
 @media (max-width: 640px) {
   .inner {
     padding-top: 50px;
-    padding-bottom: 50px
+    padding-bottom: 50px;
   }
   .header__address {
     font-size: 14px;
@@ -1213,9 +1295,18 @@ textarea {
     margin-bottom: 10px;
     font-size: 16px;
   }
-  
+
   .similar-item__price {
     font-size: 14px;
+  }
+
+  .list_guarantee-marker {
+    font-size: 18px;
+  }
+
+  .list_guarantee-marker:before {
+    width: 17px;
+    height: 17px;
   }
 }
 
@@ -1230,6 +1321,10 @@ textarea {
 
   h3 {
     font-size: 16px;
+  }
+
+  .page .title-section {
+    font-size: 30px;
   }
 
   .header__address {
@@ -1268,8 +1363,17 @@ textarea {
     margin-bottom: 10px;
     font-size: 18px;
   }
-  
+
   .similar-item__price {
     font-size: 16px;
+  }
+
+  .cooperation__item {
+    width: 100%;
+  }
+
+  .list-rules__item {
+    max-width: 85%;
+    margin: 15px auto;
   }
 }
