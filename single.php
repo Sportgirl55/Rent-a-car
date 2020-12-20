@@ -1,6 +1,4 @@
 <?php include('header.php') ?>
-
-<body>
   <main class="single__page">
 
     <div class="container single__container">

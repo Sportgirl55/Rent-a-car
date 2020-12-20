@@ -1,6 +1,4 @@
 <?php include('header.php') ?>
-
-<body>
   <main class="front-page">
 
     <div class="hero">

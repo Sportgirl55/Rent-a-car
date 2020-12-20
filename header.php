@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <title>Аренда авто</title>
 </head>
+<body>
 <header class="header-page">
   <div class="container">
     <div class="header__base">
@@ -23,7 +24,6 @@
   <nav class="nav">
     <div class="container nav-container">
       <ul class="main-menu list">
-        <li><a href="./page-cars.php">Автомобили</a></li>
         <li><a href="./page-about.php">О нас</a></li>
         <li><a href="./page-rent.php">Условия аренды</a></li>
         <li><a href="./page-lawyers.php">Юридическим лицам</a></li>
