@@ -1,4 +1,4 @@
-<?php include('header.php') ?>
+<?php get_header(); ?>
   <main class="single__page">
 
     <div class="container single__container">
@@ -108,4 +108,4 @@
     </div><!-- container -->
 
   </main>
-  <?php include('footer.php') ?>
+<?php get_footer(); ?>

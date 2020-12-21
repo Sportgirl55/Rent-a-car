@@ -7,28 +7,30 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <title>Аренда авто</title>
+  <title><?php wp_title("", true); ?></title>
+  <?php wp_head();?>
 </head>
 <body>
 <header class="header-page">
   <div class="container">
     <div class="header__base">
-      <a class="logo logo_header" href="/"><img src="img/icons/logo.png" alt="logo"></a>
+      <a class="logo logo_header" href="/"><img src="<?php bloginfo('template_url') ?>/img/icons/logo.png" alt="logo"></a>
       <address class="header__address">
-        <span class="header__location"><?php include('./includes/address.php') ?></span>
-        <span class="header__phone"><?php include('./includes/phone.php') ?></span>
+        <span class="header__location"><?php include('includes/address.php') ?></span>
+        <span class="header__phone"><?php include('includes/phone.php') ?></span>
       </address>
     </div>
   </div>
 
   <nav class="nav">
     <div class="container nav-container">
-      <ul class="main-menu list">
+    <?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'main-menu list', 'theme_location' => 'header_menu' ) ); ?>
+      <!-- <ul class="main-menu list">
         <li><a href="./page-about.php">О нас</a></li>
         <li><a href="./page-rent.php">Условия аренды</a></li>
         <li><a href="./page-lawyers.php">Юридическим лицам</a></li>
         <li><a href="./page-contacts.php">Контакты</a></li>
-      </ul>
+      </ul> -->
       <button class="hamb" type="button">
         <span class="hamb__line">
           <span class="visually-hidden">Открыть меню</span>

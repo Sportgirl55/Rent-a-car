@@ -1,4 +1,9 @@
-<?php include('header.php') ?>
+<?php
+/*
+Template Name: Страница о нас
+*/
+?><?php get_header(); ?>
+
 <main class="page">
 
 
@@ -168,4 +173,5 @@
   </section><!-- guarantee -->
 
 </main>
-<?php include('footer.php') ?>
+
+<?php get_footer(); ?>
