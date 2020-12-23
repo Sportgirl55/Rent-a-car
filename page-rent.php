@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Страница Аренда
+*/
+?><?php get_header(); ?>
 
 <main class="page">
   <div class="container">

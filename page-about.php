@@ -10,23 +10,10 @@ Template Name: Страница о нас
   <div class="about">
     <div class="container">
       <div class="about-inner">
-        <h2 class="title-wrapper j-center"><span class="title-section">О нас</span></h2>
+        <h2 class="title-wrapper j-center"><span class="title-section"><?php the_field('zagolovok_o_nas'); ?></span>
+        </h2>
         <div class="about-inner__text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab eveniet suscipit sequi corrupti.
-            Assumenda, nisi! Rem saepe, laborum temporibus adipisci laboriosam hic asperiores vero, id consequuntur
-            ullam unde totam.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab eveniet suscipit sequi corrupti.
-            Assumenda, nisi! Rem saepe, laborum temporibus adipisci laboriosam hic asperiores vero, id consequuntur
-            ullam unde totam.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab eveniet suscipit sequi corrupti.
-            Assumenda, nisi! Rem saepe, laborum temporibus adipisci laboriosam hic asperiores vero, id consequuntur
-            ullam unde totam.
-          </p>
+          <?php the_field('tekst_bloka_o_nas'); ?>
         </div><!-- about-inner__text -->
       </div><!-- about-inner -->
     </div><!-- container -->
@@ -36,13 +23,9 @@ Template Name: Страница о нас
   <div class="about-feature">
     <div class="container">
       <div class="about-feature-inner">
-        <h2 class="title-wrapper j-center"><span class="title-section">Заголовок особенностей о нас</span></h2>
+        <h2 class="title-wrapper j-center"><span class="title-section"><?php the_field('zagolovok_osobennosti'); ?></span></h2>
         <div class="about-feature-inner__text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab eveniet suscipit sequi corrupti.
-            Assumenda, nisi! Rem saepe, laborum temporibus adipisci laboriosam hic asperiores vero, id consequuntur
-            ullam unde totam.
-          </p>
+        <?php the_field('tekst_bloka_osobennosti'); ?>
           <ul>
             <li>
               Lorem ipsum dolor sit amet consectetu
@@ -76,10 +59,9 @@ Template Name: Страница о нас
 
   <section class="documents">
     <div class="container">
-      <h2 class="title-wrapper j-center"><span class="title-section">Отчетные документы</span></h2>
+      <h2 class="title-wrapper j-center"><span class="title-section"><?php the_field('zagolovok_otchetnye_dokumenty'); ?></span></h2>
       <div class="documents__desc">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus explicabo magnam officia, aliquam fugit
-        labore nulla sequi quisquam omnis molestias sit quidem cumque cupiditate sed corrupti temporibus tempore, ex ea.
+      <?php the_field('tekst_otchyotnye_dokumenty'); ?>
       </div>
       <ul class="documents__list">
         <li>
@@ -105,54 +87,52 @@ Template Name: Страница о нас
   </section><!-- documents -->
 
   <section class="cooperation">
-    <h2 class="title-wrapper j-center"><span class="title-section">Сотрудничество</span></h2>
-    <p class="cooperation-desc">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati explicabo dolore dolor possimus laboriosam
-      distinctio optio, itaque nemo quisquam assumenda? Harum fugit veniam modi non quia id qui sed? Culpa.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde quas earum velit pariatur exercitationem
-      odit ad quae cumque. Praesentium, eum eveniet? Accusantium nemo officiis corrupti magni? Facilis, fuga quo!
-    </p>
+    <h2 class="title-wrapper j-center"><span class="title-section"><?php the_field('zagolovok_sotrudnichestvo'); ?></span></h2>
+    <!-- <p class="cooperation-desc"> -->
+    <?php the_field('tekst_bloka_sotrudnichestvo'); ?>
+    <!-- </p> -->
     <p class="cooperation-wy-we">
       Почему выгодно арендовать автомобиль у нас?
     </p>
     <ul class="cooperation-list container">
+      <?php
 
-      <li class="cooperation__item">
-        <div class="cooperation-list__icon">icon</div>
-        <span class="cooperation-list__title">заголовок айтема</span>
-        <p class="cooperation-list__desc">
-          описание айтема
-        </p>
-      </li><!-- cooperation__item -->
+// проверяем есть ли в повторителе данные
+if( have_rows('spisok_bloka_sotrudnichestvo') ):
 
-      <li class="cooperation__item">
-        <div class="cooperation-list__icon">icon</div>
-        <span class="cooperation-list__title">заголовок айтема</span>
-        <p class="cooperation-list__desc">
-          описание айтема
-        </p>
-      </li><!-- cooperation__item -->
+ 	// перебираем данные
+    while ( have_rows('spisok_bloka_sotrudnichestvo') ) : the_row(); ?>
+    <li class="cooperation__item">
+    <?php 
+      $image = get_sub_field('ikonka_spiska_sotrudnichestvo');
+      $content = get_sub_field('content');
+      $link = get_sub_field('link');
 
-      <li class="cooperation__item">
-        <div class="cooperation-list__icon">icon</div>
-        <span class="cooperation-list__title">заголовок айтема</span>
-        <p class="cooperation-list__desc">
-          описание айтема
-        </p>
-      </li><!-- cooperation__item -->
+    ?>
+    <div class="cooperation-list__icon"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" /></div>
+    <span class="cooperation-list__title"><?php the_sub_field('zagolovok_punkta_spiska') ?></span>
+    <p class="cooperation-list__desc">
+    <?php the_sub_field('opisanie_punkta_spiska'); ?>
+    </p>
+  </li><!-- cooperation__item -->
+   
+<?php
+    endwhile;
 
-      <li class="cooperation__item">
-        <div class="cooperation-list__icon">icon</div>
-        <span class="cooperation-list__title">заголовок айтема</span>
-        <p class="cooperation-list__desc">
-          описание айтема
-        </p>
-      </li><!-- cooperation__item -->
+else :
+
+    // вложенных полей не найдено
+
+endif;
+
+?>
+
+
     </ul>
   </section><!-- cooperation -->
 
   <section class="guarantee">
-    <h2 class="title-wrapper j-center"><span class="title-section">Мы гарантируем</span></h2>
+    <h2 class="title-wrapper j-center"><span class="title-section"><?php the_field('zagolovok_my_garantiruem'); ?></span></h2>
     <ul class="list_guarantee">
       <li class="list_guarantee-marker">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus

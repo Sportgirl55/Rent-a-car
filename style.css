@@ -843,7 +843,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: 4px;
   background-position: center;
-  background-image: url(img/icons/icon-attention-sign.svg);  /* добавить восклицательный знак */
+  background-image: url(img/icons/icon-attention.svg); 
   border: 2px solid red;
   border-radius: 5px;
 }

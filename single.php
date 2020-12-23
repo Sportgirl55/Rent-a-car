@@ -11,18 +11,19 @@
           <div class="car-data">
             <div class="card__info">
               <div class="card__wrap">
-                <span class="card__info-name">Hyundai Solaris</span>
-                <span class="card__info-price">От 1500 руб / сутки</span>
+                <span class="card__info-name"><?php the_title(); ?></span>
+                <span class="card__info-price">От <?php the_field('czena'); ?> руб / сутки</span>
                 <!-- <div class="car__info"> -->
                   <ul class="list car__info-list">
                     <li><span class="car-feature">Марка авто:</span><span class="car-value">Hyundai</span></li>
-                    <li><span class="car-feature">КПП:</span><span class="car-value">Механика</span></li>
+                    <li><span class="car-feature">КПП:</span><span class="car-value"><?php the_field('korobka_peredach'); ?></span></li>
                     <li><span class="car-feature">Год выпуска:</span><span class="car-value">2015</span></li>
-                    <li><span class="car-feature">Двигатель:</span><span class="car-value">1.6</span></li>
-                    <li><span class="car-feature">Тип топлива:</span><span class="car-value">Бензин</span></li>
-                    <li><span class="car-feature">Пробег:</span><span class="car-value">150 тыс.км.</span></li>
-                    <li><span class="car-feature">Руль:</span><span class="car-value">Левый</span></li>
-                    <li><span class="car-feature">Цвет:</span><span class="car-value">Белый</span></li>
+                    <li><span class="car-feature">Двигатель:</span><span class="car-value"><?php the_field('litry'); ?> л</span></li>
+                    <li><span class="car-feature">Расход топлива</span><span class="car-value"><?php the_field('rashod_topliva'); ?> л/100 км</span></li>
+                    <li><span class="car-feature">Тип топлива:</span><span class="car-value"><?php the_field('tip_topliva'); ?></span></li>
+                    <li><span class="car-feature">Пробег:</span><span class="car-value"><?php the_field('probeg'); ?> тыс.км.</span></li>
+                    <li><span class="car-feature">Руль:</span><span class="car-value"><?php the_field('rul'); ?></span></li>
+                    <li><span class="car-feature">Цвет:</span><span class="car-value"><?php the_field('czvet'); ?></span></li>
                   </ul>
                 <!-- </div> -->
               </div>
