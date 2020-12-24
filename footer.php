@@ -22,7 +22,6 @@
       <span class="copyright">© 2020, Все права защищены.</span>
     </div><!-- container -->
   </footer>
-  <script src="js/script.js"></script>
   <?php wp_footer();?>
 </body>
 

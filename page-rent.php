@@ -7,73 +7,60 @@ Template Name: Страница Аренда
 <main class="page">
   <div class="container">
     <section class="section-rules">
-        <h2 class="title-wrapper j-center"><span class="title-section">Условия аренды</span></h2>
-        <div class="rules-desc">
-          <div class="rules-desc__text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem voluptate, modi sit nemo vel voluptatum natus nulla eveniet architecto minus! Voluptatem ducimus, commodi a pariatur labore hic libero eos!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem voluptate, modi sit nemo vel voluptatum natus nulla eveniet architecto minus! Voluptatem ducimus, commodi a pariatur labore hic libero eos!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem voluptate, modi sit nemo vel voluptatum natus nulla eveniet architecto minus! Voluptatem ducimus, commodi a pariatur labore hic libero eos!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem voluptate, modi sit nemo vel voluptatum natus nulla eveniet architecto minus! Voluptatem ducimus, commodi a pariatur labore hic libero eos!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem voluptate, modi sit nemo vel voluptatum natus nulla eveniet architecto minus! Voluptatem ducimus, commodi a pariatur labore hic libero eos!
-            </p>
+      <h2 class="title-wrapper j-center"><span
+          class="title-section"><?php the_field('zagolovok_usloviya_arendy'); ?></span></h2>
+      <div class="rules-desc">
+        <div class="rules-desc__text">
+          <?php the_field('tekst_usloviya_arendy'); ?>
+        </div>
+        <div class="rules-desc__list-wrapper">
+          <div class="title-wrapper wrapper_attention-title j-center">
+            <p class="attention-title"><?php the_field('zagolovok_spiska_zapreshhaetsya'); ?></p>
           </div>
-          <div class="rules-desc__list-wrapper">
-            <div class="title-wrapper wrapper_attention-title j-center">
-                <p class="attention-title">Гостям категорически запрещается:</p>
-            </div>
-            <ul class="list list_attention">
-              <li class="list-marker">
-                Запрет 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </li>
-              <li class="list-marker">
-                Запрет 2 Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet consectetur adipisicing elit.
-              </li>
-              <li class="list-marker">
-                Запрет 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </li>
-              <li class="list-marker">
-              Запрет 4 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </li>
-              <li class="list-marker">
-              Запрет 5 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </li>
-            </ul>
-          </div>
+          <ul class="list list_attention">
+            <?php
+
+      // проверяем есть ли в повторителе данные
+      if( have_rows('spisok_zapreshhaetsya_arendatoram') ):
+
+      // перебираем данные
+        while ( have_rows('spisok_zapreshhaetsya_arendatoram') ) : the_row(); ?>
+            <li class="list-marker">
+              <?php the_sub_field('punkt_spiska_arendatoram_zapreshhaetsya') ?>
+            </li>
+            <?php
+          endwhile;
+      else :
+      endif;
+      ?>
+          </ul>
+        </div>
       </div>
     </section>
     <div class="block-attention">
-      <p>
-        При нарушении правил аренды Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem voluptate, modi sit nemo vel voluptatum natus nulla eveniet architecto minus! Voluptatem ducimus,
-      </p>
+      <?php the_field('tekst_preduprezhdeniya'); ?>
     </div>
     <ul class="list list_rules container">
+    <?php
+    if( have_rows('spisok_pravil_arendy') ):
+    while ( have_rows('spisok_pravil_arendy') ) : the_row(); ?>
       <li class="list-rules__item">
-        <h3 class="title-wrapper j-center"><span class="title-section">Аренда</span></h3>
+      <!-- <?php 
+      $image = get_sub_field('ikonka_spiska_sotrudnichestvo');
+      $content = get_sub_field('content');
+      $link = get_sub_field('link');
+    ?> -->
+      <h3 class="title-wrapper j-center"><span class="title-section"><?php the_sub_field('zagolovok_punkta_pravil_arendy'); ?></span></h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem voluptate, modi sit nemo vel voluptatum natus nulla eveniet architecto minus! Voluptatem ducimus, commodi a pariatur labore hic libero eos!
+          <?php the_sub_field('punkt_pravil_arendy'); ?>
         </p>
-      </li>
-      <li class="list-rules__item">
-        <h3 class="title-wrapper j-center"><span class="title-section">Продление срока аренды</span></h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odit doloribus, unde molestiae a aliquid consequatur repellat repudiandae id voluptatem natus qui tempora pariatur nemo aperiam porro quo impedit. Tempore.
-        </p>
-      </li>
-      <li class="list-rules__item">
-        <h3 class="title-wrapper j-center"><span class="title-section">Окончание аренды</span></h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, veritatis! Consectetur, amet! Recusandae officia ullam reiciendis aliquam reprehenderit nisi accusantium quo quod! Sit incidunt et voluptatem explicabo dolores esse at!
-        </p>
-      </li>
+      </li><!-- cooperation__item -->
+
+      <?php
+    endwhile;
+      else :
+      endif;
+      ?>
     </ul>
   </div>
 </main>

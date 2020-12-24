@@ -772,7 +772,6 @@ textarea {
 }
 
 .rules-desc {
-  outline: 1px solid red;
   display: flex;
   font-size: 18px;
   line-height: 1.5;
@@ -780,13 +779,11 @@ textarea {
 }
 
 .rules-desc__text {
-  outline: 1px solid green;
   width: calc(50% - 50px);
   margin-right: 50px;
 }
 
 .rules-desc__list-wrapper {
-  outline: 1px solid blue;
   width: 50%;
 }
 
@@ -816,7 +813,6 @@ textarea {
 }
 
 .block-attention {
-  outline: 1px solid tomato;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 50px;
@@ -872,40 +868,33 @@ textarea {
 /* PAGE-ABOUT */
 
 .about {
-  outline: 1px solid blue;
   margin-bottom: 50px;
 }
 
 .about .container {
-  outline: 1px solid green;
   display: flex;
   justify-content: flex-end;
 }
 
 .about-inner {
   width: 60%;
-  outline: 1px solid tomato;
 }
 
 .about-feature {
-  outline: 1px solid blue;
   margin-bottom: 50px;
 }
 
 .about-feature .container {
-  outline: 1px solid green;
   display: flex;
 }
 
 .about-feature-inner {
   width: 60%;
-  outline: 1px solid tomato;
 }
 
 .documents {
   max-width: 700px;
   margin: 0 auto 50px auto;
-  outline: 1px solid blue;
 }
 
 .cooperation {
@@ -936,14 +925,12 @@ textarea {
   width: calc(100% / 4 - 40px);
   margin-left: 20px;
   margin-right: 20px;
-  outline: 1px solid tomato;
 }
 
 .cooperation-list__icon {
   width: 70px;
   height: 70px;
   margin-bottom: 30px;
-  outline: 1px solid green;
 }
 
 .cooperation-list__title {

@@ -14,7 +14,7 @@ Template Name: Шаблон для главной
           <li>Выгодные условия аренды</li>
           <li>Быстрый и удобный сервис без проволочек</li>
         </ul>
-        <a class="btn" href="#0"><span class="btn-text">Найти автомобиль</span></a>
+        <a class="btn btn-scroll" href="#0"><span class="btn-text">Найти автомобиль</span></a>
       </div>
     </div>
   </div>

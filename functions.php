@@ -5,12 +5,9 @@
  * загружаемые скрипты и стили
  */
 function load_style_script(){
-    wp_enqueue_script('jquery');
 	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js');
-    wp_enqueue_script('fotorama-j', get_template_directory_uri() . '/js/fotorama.js');
 
     wp_enqueue_style('wp-editor', get_template_directory_uri() . '/css/wp-editor.css');
-    wp_enqueue_style('fotorama-c', get_template_directory_uri() . '/css/fotorama.css');
 	wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
 }
 
