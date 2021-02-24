@@ -199,22 +199,12 @@ textarea {
 
 .main-menu {
   display: flex;
-  justify-content: space-between; /* flex-end задан в правиле выше. А зачем он здесь - мне непонятно. Так что оставлю пока как есть*/
-  /* justify-content: flex-end; */
+  justify-content: space-around;
+  
   font-size: 18px;
   line-height: 21px;
   width: 100%;
 }
-
-.main-menu li {
-  margin-left: 100px; /* <-- это не нравится. Может без фиксированного отступа, а просто space-between, чтоб резиновость сохранялась?? */
-}
-
-/* .main-menu li:first-child {
-  margin-left: 0;
-} */
-
-/* если обнулить отступ у первого элемента, то не будет соответствовать макету. Или я туплю*/
 
 .hamb {
   display: none;
@@ -522,6 +512,7 @@ textarea {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .card__info-price {
@@ -668,7 +659,7 @@ textarea {
 }
 
 .car-data-box {
-  width: 30%;
+  min-width: 30%;
   margin-left: 60px;
 }
 
@@ -1363,4 +1354,36 @@ textarea {
     max-width: 85%;
     margin: 15px auto;
   }
+}
+
+
+
+/* LIGHTBOX  */
+
+.cars__photo-list li:first-child {
+  flex: 100%;
+}
+
+/* 
+.cars__photo-list li {
+   flex: 1; 
+   width: calc(100% / 3 - 10px); 
+} */
+
+.cars__photo-list img {
+  width: 256px;
+  height: 186px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.cars__photo-list li:first-child img {
+  min-width: 796px;
+  height: auto;
+}
+
+.cars__photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

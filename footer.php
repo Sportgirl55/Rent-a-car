@@ -23,6 +23,7 @@
     </div><!-- container -->
   </footer>
   <?php wp_footer();?>
+  <script src="http://rent-a-car/wp-content/themes/rent-theme/js/lightbox.min.js"></script>
 </body>
 
 </html>
