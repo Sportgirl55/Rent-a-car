@@ -13,6 +13,10 @@
                 src="http://rent-a-car/wp-content/themes/rent-theme/img/hyundai.jpg" alt=""></a></li>
           <li><a href="http://rent-a-car/wp-content/themes/rent-theme/img/kia.jpg" data-lightbox="cars"><img
                 src="http://rent-a-car/wp-content/themes/rent-theme/img/kia.jpg" alt=""></a></li>
+          <li><a href="http://rent-a-car/wp-content/themes/rent-theme/img/kia.jpg" data-lightbox="cars"><img
+                src="http://rent-a-car/wp-content/themes/rent-theme/img/kia.jpg" alt=""></a></li>
+          <li><a href="http://rent-a-car/wp-content/themes/rent-theme/img/kia.jpg" data-lightbox="cars"><img
+                src="http://rent-a-car/wp-content/themes/rent-theme/img/kia.jpg" alt=""></a></li>
         </ul><!-- cars__photo-list -->
       </div> <!--cars__photo -->
 
@@ -24,7 +28,7 @@
               <span class="card__info-name"><?php the_title(); ?></span>
               <span class="card__info-price">От <?php the_field('czena'); ?> руб / сутки</span>
               <!-- <div class="car__info"> -->
-              <ul class="list car__info-list">
+              <ul class="car__info-list">
                 <li><span class="car-feature">Марка авто:</span><span class="car-value">Hyundai</span></li>
                 <li><span class="car-feature">КПП:</span><span
                     class="car-value"><?php the_field('korobka_peredach'); ?></span></li>
@@ -83,7 +87,7 @@
 
         <li class="similar-item">
           <div class="similar-item__thumb">
-            <img src="img/chevrolet.jpg" alt="">
+            <img src="http://rent-a-car/wp-content/themes/rent-theme/img/kia.jpg" alt="">
           </div>
           <div class="similar-item__content">
             <h3 class="similar-item__title">Hyundai Solaris</h3>

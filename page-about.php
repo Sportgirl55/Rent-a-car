@@ -18,11 +18,16 @@ Template Name: Страница о нас
   <div class="about">
     <div class="container">
       <div class="about-inner">
-        <h2 class="title-wrapper j-center"><span class="title-section"><?php the_field('zagolovok_o_nas'); ?></span>
-        </h2>
-        <div class="about-inner__text">
-          <?php the_field('tekst_bloka_o_nas'); ?>
-        </div><!-- about-inner__text -->
+        <div class="about__picture">
+         
+        </div>
+        <div class="about__text">
+          <h2 class="title-wrapper j-center"><span class="title-section"><?php the_field('zagolovok_o_nas'); ?></span>
+          </h2>
+          <div class="about-inner__text">
+            <?php the_field('tekst_bloka_o_nas'); ?>
+          </div><!-- about-inner__text -->
+        </div>
       </div><!-- about-inner -->
     </div><!-- container -->
 
@@ -36,13 +41,13 @@ Template Name: Страница о нас
         <div class="about-feature-inner__text">
           <?php the_field('tekst_bloka_osobennosti'); ?>
         </div><!-- about-feature-inner__text -->
-        <ul>
+        <ul class="about-feature-list list">
           <?php
       // проверяем есть ли в повторителе данные
       if( have_rows('spisok_bloka_osobennosti') ):
       // перебираем данные
         while ( have_rows('spisok_bloka_osobennosti') ) : the_row(); ?>
-          <li>
+          <li class="marker">
             <?php the_sub_field('punkt_spiska_osobennostej') ?>
           </li>
           <?php
@@ -63,20 +68,20 @@ Template Name: Страница о нас
       <div class="documents__desc">
         <?php the_field('tekst_otchyotnye_dokumenty'); ?>
       </div>
-      <ul class="documents__list">
-        <li>
+      <ul class="documents__list list">
+        <li class="marker">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus explicabo magnam
         </li>
-        <li>
+        <li class="marker">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus explicabo magnam
         </li>
-        <li>
+        <li class="marker">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus explicabo magnam
         </li>
-        <li>
+        <li class="marker">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus explicabo magnam
         </li>
-        <li>
+        <li class="marker">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus explicabo magnam
         </li>
       </ul>
@@ -135,11 +140,11 @@ if( have_rows('spisok_bloka_sotrudnichestvo') ):
   <section class="guarantee">
     <h2 class="title-wrapper j-center"><span
         class="title-section"><?php the_field('zagolovok_my_garantiruem'); ?></span></h2>
-    <ul class="list_guarantee">
+    <ul class="list_guarantee container list">
       <?php
       if( have_rows('spisok_bloka_garantii') ):
       while ( have_rows('spisok_bloka_garantii') ) : the_row(); ?>
-      <li class="list_guarantee-marker">
+      <li class="marker">
         <?php the_sub_field('punkt_spiska_garantij') ?>
       </li>
       <?php
